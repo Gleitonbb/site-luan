@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main{
+ width: 100%;
+ height: 100vh;   
+}
+.carrossel {
+  position: relative;
+  width: 80%;   /* largura do carrossel */
+  overflow: hidden;
+  margin: 50px auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+.carrossel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+ 
+}
+
+.item {
+  min-width: 100%; /* igual à largura do carrossel */
+  height: 400px;
+  background: lightblue;
+  /*border: 2px solid black;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Botões */
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.seta.esquerda {
+  left: 10px;
+}
+
+.seta.direita {
+  right: 10px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 15px;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Botão hamburguer */
+.hamburguer {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburguer span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+}
+
+/* Popup (menu escondido) */
+.menu-popup {
+  display: none; /* escondido por padrão */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Caixa do popup */
+.menu-conteudo {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 250px;
+  animation: aparecer 0.3s ease-in-out;
+}
+
+@keyframes aparecer {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.menu-conteudo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-conteudo li {
+  margin: 15px 0;
+}
+
+.menu-conteudo a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.menu-conteudo a:hover {
+  color: #00bcd4;
+}
+
+/* Botão de fechar */
+.fechar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+}
+
