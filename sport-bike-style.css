@@ -37,7 +37,7 @@ main{
 /* Estilo padrão (desktop) */
 .imagem-apresentacao {
   width: 100%;
-  height: 400px; /* altura para desktop */
+  height: 70vh; /* altura para desktop */
   background-image: url("imagem/imagem-apresentacao.png");
   background-size: cover;
   background-position: center;
