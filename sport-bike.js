@@ -33,20 +33,14 @@ function atualizarCarrossel() {
   container.style.transform = `translateX(${-index * largura}px)`
 }
 
-// abrir popup ao clicar no hambúrguer
+// abrir popup e esconder hambúrguer
 btnHamburguer.addEventListener("click", () => {
-  menuPopup.style.display = "flex"
+  menuPopup.style.display = "block";
+  btnHamburguer.style.display = "none";
 });
 
-// fechar popup ao clicar no X
+// fechar popup e mostrar hambúrguer de volta
 btnFechar.addEventListener("click", () => {
-  menuPopup.style.display = "none"
+  menuPopup.style.display = "none";
+  btnHamburguer.style.display = "flex";
 });
-
-// fechar popup ao clicar fora do menu
-menuPopup.addEventListener("click", (e) => {
-  if (e.target === menuPopup) {
-    menuPopup.style.display = "none"
-  }
-})
-

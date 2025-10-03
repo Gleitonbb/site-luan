@@ -9,7 +9,7 @@
 </head>
 <body>
     <main>
-  <header>
+<header>
   <nav class="navbar">
     <div class="logo">MinhaLogo</div>
     <button class="hamburguer" id="hamburguer">
@@ -17,21 +17,19 @@
       <span></span>
       <span></span>
     </button>
+
+    <!-- Popup do menu logo abaixo do hamburguer -->
+    <div class="menu-popup" id="menuPopup">
+      <button class="fechar" id="fechar">✖</button>
+      <ul>
+        <li><a href="inicio.html">Início</a></li>
+        <li><a href="motos.html">Motos</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
   </nav>
 </header>
-
-<!-- Popup do menu -->
-<div class="menu-popup" id="menuPopup">
-  <div class="menu-conteudo">
-    <button class="fechar" id="fechar">✖</button>
-    <ul>
-      <li><a href="inicio.html">Início</a></li>
-      <li><a href="motos.html">Motos</a></li>
-      <li><a href="servicos.html">Serviços</a></li>
-      <li><a href="contato.html">Contato</a></li>
-    </ul>
-  </div>
-</div>
 
     <!-- Tracinhos do hambúrguer -->
     <div class="menu"></div>
@@ -39,7 +37,7 @@
     <button class="seta esquerda">&#10094;</button>
   
   <div class="carrossel-container">
-    <div class="item">1</div>
+    <div class="item"><img src="imagem/imagem-apresentacao.png" alt=""></div>
     <div class="item">2</div>
     <div class="item">3</div>
     <div class="item">4</div>
@@ -47,6 +45,7 @@
   
   <button class="seta direita">&#10095;</button>
 </div>
+
     </main>
 
     <script src="sport-bike.js"></script>

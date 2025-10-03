@@ -24,7 +24,7 @@ main{
 
 .item {
   min-width: 100%; /* igual à largura do carrossel */
-  height: 400px;
+  height: 600px;
   background: lightblue;
   /*border: 2px solid black;*/
   display: flex;
@@ -64,6 +64,7 @@ main{
   background: #222;
   padding: 15px;
   color: white;
+  position: relative; /* para posicionar o menu embaixo */
 }
 
 .logo {
@@ -71,7 +72,7 @@ main{
   font-weight: bold;
 }
 
-/* Botão hamburguer */
+/* Botão hambúrguer */
 .hamburguer {
   width: 30px;
   height: 25px;
@@ -91,63 +92,52 @@ main{
   border-radius: 5px;
 }
 
-/* Popup (menu escondido) */
+/* Popup */
 .menu-popup {
-  display: none; /* escondido por padrão */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-/* Caixa do popup */
-.menu-conteudo {
+  display: none; /* escondido no início */
+  position: absolute;
+  top: 60px; /* logo abaixo do navbar */
+  right: 15px;
   background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  text-align: center;
-  min-width: 250px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
   animation: aparecer 0.3s ease-in-out;
 }
 
 @keyframes aparecer {
-  from { transform: scale(0.7); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from { transform: translateY(-10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
-.menu-conteudo ul {
+.menu-popup ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.menu-conteudo li {
-  margin: 15px 0;
+.menu-popup li {
+  margin: 12px 0;
 }
 
-.menu-conteudo a {
+.menu-popup a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #222;
 }
 
-.menu-conteudo a:hover {
+.menu-popup a:hover {
   color: #00bcd4;
 }
 
 /* Botão de fechar */
 .fechar {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 1.5rem;
+  top: 5px;
+  right: 8px;
+  font-size: 1.2rem;
   border: none;
   background: none;
   cursor: pointer;
-  color: white;
+  color: #222;
 }
-
