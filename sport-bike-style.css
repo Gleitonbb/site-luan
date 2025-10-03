@@ -24,7 +24,7 @@ main{
 
 .item {
   min-width: 100%; /* igual à largura do carrossel */
-  height: 600px;
+  height: 70vh;
   background: lightblue;
   /*border: 2px solid black;*/
   display: flex;
