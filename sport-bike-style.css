@@ -45,10 +45,10 @@ main{
 }
 
 /* Quando a tela for celular (até 768px) */
-@media (max-width: 768px) {
+@media (max-width: 100%) {
   .imagem-apresentacao {
     background-image: url("imagem/imagem-apresentacao-mobile.png");
-    height: 220px; /* altura menor no celular */
+    height: 70vh; /* altura menor no celular */
   }
 }
 
