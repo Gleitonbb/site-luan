@@ -24,7 +24,7 @@ main{
 
 .item {
   min-width: 100%; /* igual à largura do carrossel */
-  height: 70vh;
+  height: 600px;
   background: lightblue;
   /*border: 2px solid black;*/
   display: flex;
@@ -37,7 +37,7 @@ main{
 /* Estilo padrão (desktop) */
 .imagem-apresentacao {
   width: 100%;
-  height: 70vh; /* altura para desktop */
+  height: 400px; /* altura para desktop */
   background-image: url("imagem/imagem-apresentacao.png");
   background-size: cover;
   background-position: center;
@@ -45,7 +45,7 @@ main{
 }
 
 /* Quando a tela for celular (até 768px) */
-@media (max-width: 328px) {
+@media (max-width: 368px) {
   .imagem-apresentacao {
     background-image: url("imagem/imagem-apresentacao-mobile.png");
     height: 620px; /* altura menor no celular */
