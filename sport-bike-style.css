@@ -45,12 +45,37 @@ main{
   z-index: 1;
 }
 
+
 /* Quando a tela for celular (até 768px) */
 @media (max-width: 328px) {
   .imagem-apresentacao {
     background-image: url("imagem/imagem-apresentacao-mobile.png");
     height: 600px; /* altura menor no celular */
   }
+}
+
+/* Menu hambúrguer */
+.menu {
+  position: absolute; /* tira do fluxo normal */
+  top: 20px;   /* distancia do topo */
+  right: 20px; /* distancia da direita */
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 9999; /* sempre por cima */
+}
+
+/* Os tracinhos do hambúrguer */
+.menu::before,
+.menu::after,
+.menu div {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: black;
+  margin: 6px 0;
+  border-radius: 2px;
 }
 
 
