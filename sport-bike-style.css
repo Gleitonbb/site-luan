@@ -48,7 +48,7 @@ main{
 @media (max-width: 768px) {
   .imagem-apresentacao {
     background-image: url("imagem/imagem-apresentacao-mobile.png");
-    height: 220px; /* altura menor no celular */
+    height: 620px; /* altura menor no celular */
   }
 }
 
