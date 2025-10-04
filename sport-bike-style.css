@@ -46,7 +46,7 @@ main{
 }
 
 /* Quando a tela for celular (até 768px) */
-@media (max-width: 328px) {
+@media (max-width: 228px) {
   .imagem-apresentacao {
     background-image: url("imagem/imagem-apresentacao-mobile.png");
     height: 620px; /* altura menor no celular */
