@@ -46,7 +46,7 @@ main{
 }
 .imagem01{
    width: 100%;
-  height: 70vh; /* altura para desktop */
+  height: 60vh; /* altura para desktop */
   background-image: url("imagem/moto01.webp");
   background-size: cover;
   background-position: center;
@@ -62,7 +62,7 @@ main{
 }
 .imagem03{
    width: 100%;
-  height: 50vh; /* altura para desktop */
+  height: 40vh; /* altura para desktop */
   background-image: url("imagem/moto03.avif");
   background-size: cover;
   background-position: center;
@@ -70,7 +70,7 @@ main{
 }
 .imagem04{
    width: 100%;
-  height: 50vh; /* altura para desktop */
+  height: 40vh; /* altura para desktop */
   background-image: url("imagem/moto04.webp");
   background-size: cover;
   background-position: center;
