@@ -11,7 +11,7 @@ main{
   position: relative;
   width: 80%;   /* largura do carrossel */
   overflow: hidden;
-  margin: 50px auto;
+  margin: 10px auto;
  /* border: 2px solid #ccc;*/
   border-radius: 10px;
 }
