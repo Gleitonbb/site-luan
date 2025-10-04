@@ -61,7 +61,7 @@ main{
   border-radius: 10px;
 }
 .imagem03{
-   width: 100%;
+   width: 110%;
   height: 45vh; /* altura para desktop */
   background-image: url("imagem/moto03.avif");
   background-size: cover;
