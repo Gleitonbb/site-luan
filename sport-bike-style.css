@@ -242,3 +242,14 @@ main{
   cursor: pointer;
   color: #222;
 }
+
+/* Garante que o menu apareça sobre qualquer imagem ou carrossel */
+.navbar {
+  position: relative;
+  z-index: 10;
+}
+
+.menu-popup {
+  z-index: 20; /* fica acima do carrossel e das motos */
+}
+
