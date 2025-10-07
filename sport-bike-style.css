@@ -197,6 +197,7 @@ main{
 .menu-popup  {
   display: none; /* escondido no início */
   position: absolute;
+  z-index: 20; /* fica acima do carrossel e das motos */
   top: 60px; /* logo abaixo do navbar */
   right: 15px;
   background: #fff;
@@ -249,7 +250,4 @@ main{
   z-index: 10;
 }
 
-.menu-popup {
-  z-index: 20; /* fica acima do carrossel e das motos */
-}
 
