@@ -40,7 +40,8 @@ ul {
   display: flex;               /* torna o conteúdo do link flexível */
   align-items: center;          /* alinha ícone e texto na vertical */
   text-decoration: none;        /* remove sublinhado */
-  color: #000;                  /* cor do texto */
+  color: #000;  
+  width: 100%;                /* cor do texto */
   font-size: 1rem;
   gap: 8px;                     /* espaço entre ícone e texto */
 }
@@ -48,7 +49,16 @@ ul {
 .li-elementos img {
   width: 20px;                  /* tamanho do ícone */
   height: 20px;
-  vertical-align: middle;       /* garante alinhamento fino */
+  vertical-align: middle; 
+  
+        /* garante alinhamento fino */
+}
+.icons{
+  margin-right: 5px;
+   display: flex;
+   width: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 
