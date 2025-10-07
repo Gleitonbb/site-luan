@@ -21,6 +21,36 @@ main{
   height: 85vh;
  
 }
+/* tratando os icones e texto*/
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.li-elementos {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* centraliza verticalmente */
+  margin: 8px 0;
+
+}
+
+.li-elementos a {
+  display: flex;               /* torna o conteúdo do link flexível */
+  align-items: center;          /* alinha ícone e texto na vertical */
+  text-decoration: none;        /* remove sublinhado */
+  color: #000;                  /* cor do texto */
+  font-size: 1rem;
+  gap: 8px;                     /* espaço entre ícone e texto */
+}
+
+.li-elementos img {
+  width: 20px;                  /* tamanho do ícone */
+  height: 20px;
+  vertical-align: middle;       /* garante alinhamento fino */
+}
+
 
 .item {
   min-width: 100%; /* igual à largura do carrossel */
