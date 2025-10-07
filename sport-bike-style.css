@@ -13,7 +13,6 @@ main{
   overflow: hidden;
   margin: 5px auto;
  /* border: 2px solid #ccc;*/
-  border-radius: 10px;
 }
 .carrossel-container {
   display: flex;
@@ -42,7 +41,6 @@ main{
   background-image: url("imagem/imagem-apresentacao.png");
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
 }
 .imagem01{
   /* altura para desktop */
