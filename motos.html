@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>show Motos</title>
+    <title>Produtos da loja</title>
+    <link rel="stylesheet" href="sport-bike-motos.css">
+
 </head>
 <body>
-    <h1>Aqui vai aparecer as Motos</h1>
+    <main>
+<header>
+  <nav class="navbar">
+    <div class="logo">MinhaLogo</div>
+    <button class="hamburguer" id="hamburguer">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Popup do menu logo abaixo do hamburguer -->
+    <div class="menu-popup" id="menuPopup">
+      <button class="fechar" id="fechar">✖</button>
+      <ul>
+        <li class="li-elementos"><a href="index.html"><img src="imagem/icon-home.png" alt="" class="icons"> Início</a></li>
+        <li class="li-elementos"><a href="motos.html"><img src="imagem/icon-moto.png" alt class="icons"> Motos</a></li>
+        <li class="li-elementos"><a href="servicos.html"><img src="imagem/icon-servico.png" alt class="icons"> Serviços</a></li>
+        <li class="li-elementos"><a href="contato.html"><img src="imagem/icon-contato.png" alt class="icons"> Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+    <!-- Tracinhos do hambúrguer -->
+    <div class="menu"></div>
+       <div class="carrossel">
+    <button class="seta esquerda">&#10094;</button>
+  
+  <div class="carrossel-container">
+    <div class="item apresentacao-motos"></div>
+    
+  </div>
+  
+  <button class="seta direita">&#10095;</button>
+</div>
+
+    </main>
+
+    <script src="sport-bike.js"></script>
 </body>
 </html>

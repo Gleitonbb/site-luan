@@ -74,105 +74,30 @@ ul {
   font-weight: bold;
 }
 
-/* Estilo padrão (desktop) */
-.imagem-apresentacao {
+.apresentacao-motos {
   width: 100%;
   height: 80vh; /* altura para desktop */
-  background-image: url("imagem/imagem-apresentacao.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.imagem01{
-  /* altura para desktop */
-  background-image: url("imagem/moto01.webp");
-  width: 30%;
-  display: flex;
-  justify-content: center;
+  background-image: url("imagem/imagem-motologo.png");
   background-size: contain;
   background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 10px;
 }
-.imagem02{
-   width: 20%;
-  background-image: url("imagem/moto02.webp");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-}
-.imagem03{
-  width: 20%;
-  background-image: url("imagem/moto03.avif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-}
-.imagem04{
-   width: 20%;
-  background-image: url("imagem/moto04.webp");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-}
-
-/* ==========================
-   📱 CELULAR (até 480px)
-   ========================== */
-@media (max-width: 480px) {
-  .imagem01,
-  .imagem02,
-  .imagem03,
-  .imagem04 {
-    width: 100%;
-    height: 70vh; /* aumenta a altura pra imagem ficar maior */
-    background-size: contain; /* mantém a imagem inteira */
-    background-repeat: no-repeat;
-    background-position: center center; /* centraliza no meio */
-    display: flex;
-    align-items: center; /* centraliza verticalmente */
-    justify-content: center; /* centraliza horizontalmente */
+/* Tablet */
+@media (max-width: 1024px) {
+  .apresentacao-motos {
+    height: 60vh;
+    background-size: contain;
   }
 }
 
-/* ==========================
-   📲 TABLET (481px a 1024px)
-   ========================== */
-@media (max-width: 1024px) and (min-width: 481px) {
-  .imagem01 {
-    width: 60%;
-    height: 35vh;
-  }
-
-  .imagem02 {
-    width: 100%;
-    height: 45vh;
-  }
-
-  .imagem03 {
-    width: 100%;
-    height: 35vh;
-  }
-
-  .imagem04 {
-    width: 100%;
-    height: 35vh;
-  }
-}
-
-/* Quando a tela for celular (até 768px) */
-@media (max-width: 768px) {
-  .imagem-apresentacao {
-    background-image: url("imagem/imagem-apresentacao-mobile.png");
-    height: 70vh; /* altura menor no celular */
+/* Celular */
+@media (max-width: 600px) {
+  .apresentacao-motos {
+    height: 50vh;
+    background-size: contain;
   }
 }
 
 
-/* Botões */
 .seta {
   position: absolute;
   top: 50%;
@@ -288,5 +213,3 @@ ul {
   position: relative;
   z-index: 10;
 }
-
-
