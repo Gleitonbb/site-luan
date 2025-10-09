@@ -10,12 +10,12 @@ main{
 .carrossel {
   position: relative;
   width: 100%;   /* largura do carrossel */
-  height: 40vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
- /* border: 2px solid #ccc;*/
+ 
 }
 .carrossel-container {
   display: flex;
@@ -95,7 +95,7 @@ ul {
 /* Celular */
 @media (max-width: 600px) {
   .apresentacao-motos {
-    height: 80vh;
+    height: 40vh;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -216,4 +216,37 @@ ul {
 .navbar {
   position: relative;
   z-index: 10;
+}
+/* Tablet */
+@media (max-width: 1024px) {
+  .carrossel {
+    height: 60vh;
+  }
+
+  .carrossel-container {
+    height: 60vh;
+  }
+
+  .apresentacao-motos {
+    height: 60vh;
+    background-size: contain;
+  }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  .carrossel {
+    height: 40vh; /* reduz o tamanho da div principal */
+  }
+
+  .carrossel-container {
+    height: 40vh;
+  }
+
+  .apresentacao-motos {
+    height: 39vh;
+    background-size: contain; /* mostra a imagem toda */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
