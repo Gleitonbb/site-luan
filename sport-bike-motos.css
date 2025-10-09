@@ -92,8 +92,10 @@ ul {
 /* Celular */
 @media (max-width: 600px) {
   .apresentacao-motos {
-    height: 50vh;
+    height: 80vh;
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
