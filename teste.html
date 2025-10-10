@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pop-up com Carrossel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* DIV principal (botão que abre o popup) */
+    .abrir-popup {
+      width: 200px;
+      height: 200px;
+      background: #007bff;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      font-size: 1.2em;
+    }
+
+    /* Tela de fundo do pop-up */
+    .popup-container {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Caixa do pop-up */
+    .popup {
+      background: white;
+      width: 80%;
+      max-width: 400px;
+      border-radius: 15px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    /* 🔧 Correção: criamos uma "carrossel-wrapper" que limita a área visível do carrossel */
+    .carrossel-wrapper {
+      width: 100%;
+      overflow: hidden; /* esconde as outras divs que estão fora da área visível */
+    }
+
+    /* 🔧 Correção principal:
+       Antes o carrossel tinha width: 400%, o que fazia ele pular direto pro fim.
+       Agora ele usa flex, e cada slide tem min-width: 100%, garantindo que apenas
+       UMA div ocupe a tela por vez. O movimento é feito com translateX. */
+    .carrossel {
+      display: flex;
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .carrossel div {
+      min-width: 100%; /* 🔧 Correção: cada slide ocupa 100% da largura visível */
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      font-weight: bold;
+      color: white;
+    }
+
+    /* Cores para cada slide */
+    .slide1 { background: #ff5959; }
+    .slide2 { background: #ffb347; }
+    .slide3 { background: #6ac259; }
+    .slide4 { background: #4a90e2; }
+
+    /* Botões de navegação */
+    .btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2em;
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px 15px;
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    .btn:hover {
+      background: rgba(0,0,0,0.8);
+    }
+
+    .btn-esq { left: 10px; }
+    .btn-dir { right: 10px; }
+
+    /* Botão de fechar */
+    .fechar {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 1.5em;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #333;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="abrir-popup">Abrir Pop-up</div>
+
+  <div class="popup-container" id="popupContainer">
+    <div class="popup">
+      <button class="fechar" id="fecharPopup">&times;</button>
+
+      <!-- 🔧 Correção: o carrossel foi envolvido em uma div "carrossel-wrapper"
+           que controla o espaço visível -->
+      <div class="carrossel-wrapper">
+        <div class="carrossel" id="carrossel">
+          <div class="slide1">1</div>
+          <div class="slide2">2</div>
+          <div class="slide3">3</div>
+          <div class="slide4">4</div>
+        </div>
+      </div>
+
+      <button class="btn btn-esq" id="anterior">&#8592;</button>
+      <button class="btn btn-dir" id="proximo">&#8594;</button>
+    </div>
+  </div>
+
+  <script>
+    const abrir = document.querySelector('.abrir-popup');
+    const popupContainer = document.getElementById('popupContainer');
+    const fechar = document.getElementById('fecharPopup');
+    const carrossel = document.getElementById('carrossel');
+    const anterior = document.getElementById('anterior');
+    const proximo = document.getElementById('proximo');
+
+    let indice = 0;
+    const totalSlides = carrossel.children.length;
+
+    abrir.addEventListener('click', () => {
+      popupContainer.style.display = 'flex';
+    });
+
+    fechar.addEventListener('click', () => {
+      popupContainer.style.display = 'none';
+      indice = 0;
+      atualizarCarrossel();
+    });
+
+    proximo.addEventListener('click', () => {
+      if (indice < totalSlides - 1) {
+        indice++;
+        atualizarCarrossel(); // 🔧 Correção: move exatamente uma div (100%) por clique
+      }
+    });
+
+    anterior.addEventListener('click', () => {
+      if (indice > 0) {
+        indice--;
+        atualizarCarrossel(); // 🔧 Correção: move exatamente uma div para trás
+      }
+    });
+
+    /* 🔧 Correção: o deslocamento agora é baseado no índice,
+       e cada slide ocupa 100%, então usamos -indice * 100 */
+    function atualizarCarrossel() {
+      const deslocamento = -(indice * 100);
+      carrossel.style.transform = `translateX(${deslocamento}%)`;
+    }
+  </script>
+
+</body>
+</html>
