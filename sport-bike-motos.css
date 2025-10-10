@@ -268,6 +268,9 @@ ul {
  /* --- CSS do POP-UP --- */
 
 /* Botão que abre o popup */
+ .item01{
+  height: 100vh;
+ }
  .container-popup01{
   padding: 10px;
   display: flex;
@@ -313,9 +316,9 @@ ul {
 /* Caixa do pop-up */
 .popup {
   background: white;
-  width: 100%;
-  max-width: 800px;
-  height: 80%;
+  width: 90%;
+  max-width: 700px;
+  height: 70%;
   border-radius: 15px;
   overflow: hidden;
   position: absolute;
@@ -336,7 +339,7 @@ ul {
 
 .popup-carrossel div {
   min-width: 100%;
-  height: 250px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -424,8 +427,9 @@ ul {
 
 .popup1 {
   background: white;
-  width: 80%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 700px;
+  height: 70%;
   border-radius: 15px;
   overflow: hidden;
   position: relative;
@@ -444,7 +448,7 @@ ul {
 
 .carrossel1 div {
   min-width: 100%;
-  height: 250px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -527,8 +531,9 @@ ul {
 
 .popup2 {
   background: white;
-  width: 80%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 700px;
+  height: 70%;
   border-radius: 15px;
   overflow: hidden;
   position: relative;
@@ -547,7 +552,7 @@ ul {
 
 .carrossel2 div {
   min-width: 100%;
-  height: 250px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -596,23 +601,29 @@ ul {
 
 /*3terceiro pop up*/
 /* Pop-up 3 */
+
+
+
+
+
 .abrir-popup3 {
   width: 300px;
   height: 300px;
-  background: #ff9800;
+  background: #28a745;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  margin: 10px;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   font-size: 1.2em;
 }
-.abrir-popup3:hover{
-   width: 290px;
+.abrir-popup3:hover {
+  width: 290px;
   height: 290px;
-  margin: 5px;
+  margin: 15px;
 }
 
 .popup-container3 {
@@ -624,13 +635,14 @@ ul {
   background: rgba(0,0,0,0.7);
   align-items: center;
   justify-content: center;
-  z-index: 1002;
+  z-index: 1001;
 }
 
 .popup3 {
   background: white;
-  width: 80%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 700px;
+  height: 70%;
   border-radius: 15px;
   overflow: hidden;
   position: relative;
@@ -649,7 +661,7 @@ ul {
 
 .carrossel3 div {
   min-width: 100%;
-  height: 250px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -658,10 +670,10 @@ ul {
   color: white;
 }
 
-.slide3a { background: #e74c3c; }
-.slide3b { background: #8e44ad; }
-.slide3c { background: #3498db; }
-.slide3d { background: #2ecc71; }
+.slide3a { background: #ff6f61; }
+.slide3b { background: #ffb347; }
+.slide3c { background: #6ac259; }
+.slide3d { background: #4a90e2; }
 
 .btn3 {
   position: absolute;
@@ -696,105 +708,28 @@ ul {
   z-index: 2;
 }
 
-/* 4 quarto pop up*/
-.open-popup3 {
-  width: 180px;
-  height: 60px;
-  background-color: #28a745;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border-radius: 8px;
-  margin: 20px;
-}
 
-.popup3 {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.7);
-  justify-content: center;
-  align-items: center;
-  z-index: 1003;
-}
 
-.popup-content3 {
-  position: relative;
-  width: 320px;
-  height: 250px;
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-}
 
-.close3 {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-.carousel-container3 {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.carousel3 {
-  display: flex;
-  transition: transform 0.5s ease;
-  width: 400%;
-}
-
-.carousel-item3 {
-  flex: 1 0 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #eee;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.prev3, .next3 {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: black;
-  color: white;
-  border: none;
-  font-size: 24px;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.prev3 { left: 10px; }
-.next3 { right: 10px; }
 
 /*4 quarto pop up*/
 
 .abrir-popup4 {
   width: 300px;
   height: 300px;
-  background: #28a745;
+  background: #ff9800;
   color: white;
   display: flex;
   align-items: center;
+  margin: 10px;
   justify-content: center;
   cursor: pointer;
-  margin: 10px;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   font-size: 1.2em;
 }
-.abrir-popup4:hover{
-   width: 290px;
+.abrir-popup4:hover {
+  width: 290px;
   height: 290px;
   margin: 15px;
 }
@@ -813,8 +748,9 @@ ul {
 
 .popup4 {
   background: white;
-  width: 80%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 700px;
+  height: 70%;
   border-radius: 15px;
   overflow: hidden;
   position: relative;
@@ -833,7 +769,7 @@ ul {
 
 .carrossel4 div {
   min-width: 100%;
-  height: 250px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -880,6 +816,7 @@ ul {
   z-index: 2;
 }
 
+
 /*5quinto pop up*/
 .abrir-popup5 {
   width: 300px;
@@ -888,6 +825,7 @@ ul {
   color: white;
   display: flex;
   align-items: center;
+  margin: 10px;
   justify-content: center;
   cursor: pointer;
   margin: 10px;
@@ -916,8 +854,9 @@ ul {
 
 .popup5 {
   background: white;
-  width: 80%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 700px;
+  height: 70%;
   border-radius: 15px;
   overflow: hidden;
   position: relative;
@@ -936,7 +875,7 @@ ul {
 
 .carrossel5 div {
   min-width: 100%;
-  height: 250px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -989,6 +928,7 @@ ul {
   height: 300px;
   background: #ff9800;
   color: white;
+  margin: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1000,7 +940,7 @@ ul {
 .abrir-popup6:hover {
   width: 290px;
   height: 290px;
-  margin: 5px;
+  margin: 15px;
 }
 
 .popup-container6 {
@@ -1017,8 +957,9 @@ ul {
 
 .popup6 {
   background: white;
-  width: 80%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 700px;
+  height: 70%;
   border-radius: 15px;
   overflow: hidden;
   position: relative;
@@ -1037,7 +978,7 @@ ul {
 
 .carrossel6 div {
   min-width: 100%;
-  height: 250px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1093,6 +1034,7 @@ ul {
   color: white;
   display: flex;
   align-items: center;
+  margin: 10px;
   justify-content: center;
   margin: 10px;
   cursor: pointer;
@@ -1120,8 +1062,9 @@ ul {
 
 .popup7 {
   background: white;
-  width: 80%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 500px;
+  height: 70%;
   border-radius: 15px;
   overflow: hidden;
   position: relative;
@@ -1140,7 +1083,7 @@ ul {
 
 .carrossel7 div {
   min-width: 100%;
-  height: 250px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1186,5 +1129,36 @@ ul {
   color: #333;
   z-index: 2;
 }
+
+
+/* Agrupa todos os botões de abrir pop-up */
+.container-popup01 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* horizontal por padrão */
+}
+
+/* Responsivo para tablets/celulares */
+@media (max-width: 768px) {
+  .container-popup01 {
+    flex-direction: column; /* coloca os botões na vertical */
+    align-items: center;    /* centraliza na tela */
+  }
+
+  /* Opcional: aumenta a largura dos botões para celular */
+  .abrir-popup,
+  .abrir-popup1,
+  .abrir-popup2,
+  .abrir-popup3,
+  .abrir-popup4,
+  .abrir-popup5,
+  .abrir-popup6,
+  .abrir-popup7 {
+    width: 80%;
+    max-width: 300px; 
+    margin: 10px 0; /* espaço entre os botões */
+  }
+}
+
 
 

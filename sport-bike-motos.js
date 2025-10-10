@@ -96,7 +96,7 @@ btnEsq2.addEventListener("click", () => {
 });
 
 //3 terceiro pop up
-// Pop-up 3 independente
+
 const abrirPopup3 = document.querySelector(".abrir-popup3");
 const popupContainer3 = document.querySelector(".popup-container3");
 const fechar3 = document.querySelector(".fechar3");
@@ -123,6 +123,7 @@ btnEsq3.addEventListener("click", () => {
   index3 = (index3 - 1 + carrossel3.children.length) % carrossel3.children.length;
   carrossel3.style.transform = `translateX(-${index3 * 100}%)`;
 });
+
 
 // 4 quarto pop up
 
@@ -152,6 +153,7 @@ btnEsq4.addEventListener("click", () => {
   index4 = (index4 - 1 + carrossel4.children.length) % carrossel4.children.length;
   carrossel4.style.transform = `translateX(-${index4 * 100}%)`;
 });
+
 
 //5 quinto pop up
 const abrirPopup5 = document.querySelector(".abrir-popup5");
