@@ -620,7 +620,7 @@ ul {
 .abrir-popup3 {
   width: 300px;
   height: 300px;
-  background: #28a745;
+  background: white;
   color: white;
   display: flex;
   align-items: center;
@@ -681,10 +681,10 @@ ul {
   color: white;
 }
 
-.slide3a { background: #ff6f61; }
-.slide3b { background: #ffb347; }
-.slide3c { background: #6ac259; }
-.slide3d { background: #4a90e2; }
+.slide3a { background: white; }
+.slide3b { background: white; }
+.slide3c { background: white; }
+.slide3d { background: white; }
 
 .btn3 {
   position: absolute;
