@@ -282,7 +282,7 @@ ul {
 .abrir-popup {
   width: 300px;
   height: 300px;
-  background: #007bff;
+  background: white;
    margin-left: 20px;
   color: white;
   display: flex;
@@ -298,6 +298,17 @@ ul {
    width: 290px;
   height: 290px;
   margin: 15px;
+}
+.item01 img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: contain
+}
+.item01{
+  width: 300px; 
+  height: 300px;
+
 }
 
 /* Tela de fundo do pop-up */
@@ -349,10 +360,10 @@ ul {
 }
 
 /* Cores de exemplo */
-.popup-slide1 { background: #ff5959; }
-.popup-slide2 { background: #ffb347; }
-.popup-slide3 { background: #6ac259; }
-.popup-slide4 { background: #4a90e2; }
+.popup-slide1 { background: white; }
+.popup-slide2 { background: white; }
+.popup-slide3 { background: white; }
+.popup-slide4 { background: white; }
 
 /* Botões do carrossel */
 .popup-btn {
@@ -396,7 +407,7 @@ ul {
 .abrir-popup1 {
   width: 300px;
   height: 300px;
-  background: #007bff;
+  background: white;
   color: white;
   display: flex;
   align-items: center;
@@ -457,10 +468,10 @@ ul {
   color: white;
 }
 
-.slide1a { background: #ff5959; }
-.slide1b { background: #ffb347; }
-.slide1c { background: #6ac259; }
-.slide1d { background: #4a90e2; }
+.slide1a { background: white; }
+.slide1b { background: white; }
+.slide1c { background: white; }
+.slide1d { background: white; }
 
 .btn1 {
   position: absolute;
@@ -500,7 +511,7 @@ ul {
 .abrir-popup2 {
   width: 300px;
   height: 300px;
-  background: #28a745;
+  background: white;
   color: white;
   display: flex;
   align-items: center;
@@ -561,10 +572,10 @@ ul {
   color: white;
 }
 
-.slide2a { background: #ff6f61; }
-.slide2b { background: #ffb347; }
-.slide2c { background: #6ac259; }
-.slide2d { background: #4a90e2; }
+.slide2a { background: white; }
+.slide2b { background: white; }
+.slide2c { background: white; }
+.slide2d { background: white; }
 
 .btn2 {
   position: absolute;
@@ -1135,6 +1146,9 @@ ul {
 .container-popup01 {
   display: flex;
   flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   justify-content: flex-start; /* horizontal por padrão */
 }
 
