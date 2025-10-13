@@ -1,0 +1,108 @@
+body {
+
+	font-family: 'Arial'
+	
+	, Helvetica
+	
+	,sans-serif;
+
+
+	
+	
+		background-color: #e0ba0d;
+	
+	
+		background-position: top center;
+	
+	
+		background-attachment: scroll;
+	
+	
+		background-repeat: repeat;
+	
+
+}
+
+:root {
+  --cor-principal: #ff8f00;
+	--cor-botao: #ff8f00;
+}
+a, a:hover, a:focus, .cor-principal, .menu a:hover, .atributo-comum a:hover span, .atributo-comum .active a span { color: #ff8f00; } /* Cor Principal - Textos e Links */
+.fundo-principal, .botao.principal, .botao.principal:hover, .menu li:hover > a .fundo-secundario, .flex-control-paging li a.flex-active, .dropdown-menu > li > a:hover, .filtro.lista ul li label:hover, .filtro.lista ul li.active label , .menu-simples li a:hover, .menu-simples li.active a { background-color: #ff8f00; } /* Cor Principal - Background */
+.borda-principal, .atributos ul li a:hover, .atributos ul li.active a, .tema-scuro .nav-tabs li.active a, .elastislide-carousel ul li.active a { border-color: #ff8f00; } /* Cor Principal - Bordas */
+
+
+
+:root {
+  --cor-secundaria: #444444;
+}
+.cor-secundaria { color: #444444; }
+.fundo-secundario { background-color: #444444; }
+.borda-secundaria { border-color: #444444; }
+
+
+
+.titulo {
+	font-family: 'Arial'
+  
+	, Helvetica
+	
+  , serif;
+	
+	font-weight: 700;
+	
+	
+	text-transform: uppercase;
+	
+}
+
+
+
+#cabecalho {
+
+	
+		
+		
+		background-color: #232020;
+		
+		
+		background-position: top center;
+		
+		
+			background-repeat: repeat;
+		
+	
+}
+
+
+
+.barra-inicial { background-color: #e0ba0d; }
+
+
+.barra-inicial .canais-contato span, .barra-inicial .canais-contato a, .barra-inicial .canais-contato i { color: #000000; }
+
+
+
+#rodape .institucional {
+	
+		
+		
+		background-color: #232020;
+		
+		
+		background-position: top center;
+		
+		
+			background-repeat: repeat;
+		
+	
+}
+
+
+:root {
+	--cor-botao: #ff7900;
+}
+.botao.principal.botao-comprar, .botao.principal.grande, .acoes-produto-responsiva .tag-comprar { background-color: #ff7900; }
+
+
+
