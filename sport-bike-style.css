@@ -73,6 +73,13 @@ ul {
   font-size: 2rem;
   font-weight: bold;
 }
+.video-apresentacao{
+  width: 100%;
+  height: 80vh; /* altura para desktop */
+  background-image: video("");
+  background-size: cover;
+  background-position: center;
+}
 
 /* Estilo padrão (desktop) */
 .imagem-apresentacao {
@@ -288,5 +295,29 @@ ul {
   position: relative;
   z-index: 10;
 }
+
+/*css do video*/
+
+.container-midia {
+  display: flex;
+  width: 100%;           /* ocupa toda a largura do container pai */
+  height: 1000px;         /* altura total desejada (você pode ajustar) */
+  overflow: hidden;      /* esconde partes que passem do limite */
+}
+
+.midia-esquerda,
+.midia-direita {
+  width: 50%;            /* metade da largura cada um */
+  height: 100%;          /* mesma altura */
+  object-fit: cover;     /* corta imagem/vídeo para preencher sem distorcer */
+}
+
+/* Estilo opcional para deixar mais bonito */
+.midia-esquerda {
+  border-right: 2px solid #000;  /* linha separando imagem e vídeo */
+}
+
+
+
 
 
