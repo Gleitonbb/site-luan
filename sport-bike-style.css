@@ -300,21 +300,40 @@ ul {
 
 .container-midia {
   display: flex;
-  width: 100%;           /* ocupa toda a largura do container pai */
-  height: 1000px;         /* altura total desejada (você pode ajustar) */
-  overflow: hidden;      /* esconde partes que passem do limite */
+  width: 100%;
+  height: 100vh;           /* altura proporcional à tela */
+  overflow: hidden;
 }
 
 .midia-esquerda,
 .midia-direita {
-  width: 50%;            /* metade da largura cada um */
-  height: 100%;          /* mesma altura */
-  object-fit: cover;     /* corta imagem/vídeo para preencher sem distorcer */
+  width: 50%;
+  height: 100%;
+  object-fit: cover;       /* preenche sem distorcer */
 }
 
-/* Estilo opcional para deixar mais bonito */
+/* Linha opcional entre imagem e vídeo */
 .midia-esquerda {
-  border-right: 2px solid #000;  /* linha separando imagem e vídeo */
+  border-right: 2px solid #000;
+}
+
+/* 📱 Responsivo para celular */
+@media (max-width: 768px) {
+  .container-midia {
+    flex-direction: column;  /* empilha verticalmente */
+    height: auto;            /* ajusta a altura automaticamente */
+  }
+
+  .midia-esquerda,
+  .midia-direita {
+    width: 100%;             /* ocupa 100% da largura */
+    height: 50vh;            /* metade da tela cada um */
+  }
+
+  .midia-esquerda {
+    border-right: none;      /* remove a linha separadora */
+    border-bottom: 2px solid #000; /* separa por baixo */
+  }
 }
 
 
