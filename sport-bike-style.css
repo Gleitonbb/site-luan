@@ -335,6 +335,7 @@ ul {
   width: 50%;
   height: 100%;
   object-fit: cover;       /* preenche sem distorcer */
+  
 }
 
 /* Linha opcional entre imagem e vídeo */
