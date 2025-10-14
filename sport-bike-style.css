@@ -3,16 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
-.archivo-black-regular {
-  font-family: "Archivo Black", sans-serif;
+.bbh-sans-bartle-regular {
+  font-family: "BBH Sans Bartle", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-.barlow-condensed-regular {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 400;
+.font-p{
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600; /* escolha entre 100 e 900 */
   font-style: normal;
+    font-size: 1.1rem;       /* tamanho da fonte */
+  line-height: 1.7;        /* altura das linhas */
+  text-align: justify;     /* justifica o texto */
+  letter-spacing: 0.3px;   /* espaçamento entre letras */
+  color: #333;             /* cor do texto */
+  margin-top: 10px;        /* espaço acima */
+  margin-bottom: 10px;     /* espaço abaixo */
+  padding: 10px 15px;      /* espaço interno */
+  text-indent: 30px;       /* recuo no início do parágrafo */
 }
+
 .container-fonts{
 text-align: center;
 padding: 10px;
