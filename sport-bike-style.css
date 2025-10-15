@@ -113,7 +113,7 @@ ul {
   background-image: url("imagem/imagem-apresentacao.png");
   background-size: cover;
   background-position: center;
-  border: 10px solid rgb(230, 123, 123);
+  border: 3px solid red;
   position: relative; /* necessário para posicionar o h2 dentro */
   overflow: hidden;
 }
@@ -147,14 +147,15 @@ ul {
   background-repeat: no-repeat;
   border-radius: 10px;
 }
-.imagem02{
-   width: 20%;
+.imagem02 {
   background-image: url("imagem/moto02.webp");
-  background-size: contain;
+  background-size: 60% auto;   /* regula o tamanho em porcentagem */
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 10px;
+               /* altura visível */
 }
+
 .imagem03{
   width: 20%;
   background-image: url("imagem/moto03.avif");
