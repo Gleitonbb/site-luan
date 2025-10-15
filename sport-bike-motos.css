@@ -1214,7 +1214,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-radius: 8px;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
