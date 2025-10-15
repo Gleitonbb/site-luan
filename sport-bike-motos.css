@@ -268,6 +268,12 @@ ul {
  /* --- CSS do POP-UP --- */
 
 /* Botão que abre o popup */
+  .container-descricao-vendedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
  .item01{
   height: 100vh;
  }
@@ -292,13 +298,38 @@ ul {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   font-size: 1.2em;
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .abrir-popup:hover{
-   width: 290px;
+  width: 290px;
   height: 290px;
+  box-shadow: none;
   margin: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+.estili-h3{
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: normal;   /* permite que o texto quebre linha automaticamente */
+  word-wrap: break-word; /* quebra palavras longas se precisar */
+  overflow-wrap: break-word; /* garante quebra mesmo em navegadores modernos */
+  background-color: rgba(100, 98, 98, 0.277);
+  text-align: justify;  /* Deixa o texto alinhado dos dois lados */
+  color: white;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.203);
+  padding: 5px;
+   font-size: 0.8rem; /* 🔹 diminui o tamanho do texto */
+  line-height: 1.2;  /* 🔹 ajusta o espaçamento entre linhas */
+}
+
 .item01 img{
   width: 100%;
   height: 100%;
@@ -415,7 +446,8 @@ ul {
   cursor: pointer;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 1.2em;
 }
 .abrir-popup1:hover{
