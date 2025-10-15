@@ -240,5 +240,62 @@ btnEsq7.addEventListener("click", () => {
   carrossel7.style.transform = `translateX(-${index7 * 100}%)`;
 });
 
+//funções que leva ao whatsapp
+ 
+  document.getElementById('btn-vendedor').addEventListener('click', function() {
+    const mensagem = "Olá! Vi seu anúncio e gostaria de saber mais sobre a scooter Elétrica Scooter Freio a Disco 1000W 60V Lítio FX2 Verde Duos";
+    const numero = "5562981436911"; // Substitua pelo número do vendedor
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
+  });
+
+   document.getElementById('btn-vendedor1').addEventListener('click', function() {
+    const mensagem = "Olá! Vi seu anúncio e gostaria de saber mais sobre o Triciclo Elétrico 750W Fenix Vermelho 48V 22AH Tração Reduzida - Não Precisa de CNH - Duos";
+    const numero = "5562981436911"; // Substitua pelo número do vendedor
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
+  });
+
+   document.getElementById('btn-vendedor2').addEventListener('click', function() {
+    const mensagem = "Olá! Vi seu anúncio e gostaria de saber mais sobre a scooter Elétrica Moto Duos Bike Eko-5 600w 48v Alarme Nfc Vermelho";
+    const numero = "5562981436911"; // Substitua pelo número do vendedor
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
+  });
+
+  document.getElementById('btn-vendedor3').addEventListener('click', function() {
+    const mensagem = "Olá! Vi seu anúncio e gostaria de saber mais sobre a Bicicleta Elétrica - Aro 24 - New Confort 800w";
+    const numero = "5562981436911"; // Substitua pelo número do vendedor
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
+  });
+
+  document.getElementById('btn-vendedor4').addEventListener('click', function() {
+    const mensagem = "Olá! Vi seu anúncio e gostaria de saber mais sobre a Bicicleta Elétrica Duos City 26 350w Bateria Lítio Removível";
+    const numero = "5562981436911"; // Substitua pelo número do vendedor
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
+  });
+
+    document.getElementById('btn-vendedor5').addEventListener('click', function() {
+    const mensagem = "Olá! Vi seu anúncio e gostaria de saber mais sobre a PATINETE SCOOTER ELETRICO DUOS (800w 48v)";
+    const numero = "5562981436911"; // Substitua pelo número do vendedor
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
+  })
+
+     document.getElementById('btn-vendedor6').addEventListener('click', function() {
+    const mensagem = "Olá! Vi seu anúncio e gostaria de saber mais sobre a Bicicleta Elétrica - Aro 24 - New Confort 800w";
+    const numero = "5562981436911"; // Substitua pelo número do vendedor
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
+  })
+
+     document.getElementById('btn-vendedor7').addEventListener('click', function() {
+    const mensagem = "Olá! Vi seu anúncio e gostaria de saber mais sobre oTriciclo Elétrico Duos Fox + Bateria Chumbo 4x 12V 15 Ah";
+    const numero = "5562981436911"; // Substitua pelo número do vendedor
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
+  })
 
 
