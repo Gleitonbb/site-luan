@@ -7,6 +7,7 @@
   font-family: "BBH Sans Bartle", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 1.5em;
 }
 .font-p{
   font-family: "Roboto Condensed", sans-serif;
@@ -17,8 +18,7 @@
   line-height: 1.7;        /* altura das linhas */
   text-align: justify;     /* justifica o texto */
   letter-spacing: 0.3px;   /* espaçamento entre letras */
-  color: #333;             /* cor do texto */
-  margin-top: 10px;        /* espaço acima */
+  color: #333;             /* cor do texto */      
   margin-bottom: 10px;     /* espaço abaixo */
   padding: 10px 15px;      /* espaço interno */
   text-indent: 30px;       /* recuo no início do parágrafo */
@@ -28,7 +28,6 @@
 text-align: center;
 padding: 10px;
 }
-
 main{
  width: 100%;
  height: 100vh;   
@@ -36,6 +35,7 @@ main{
 .carrossel {
   position: relative;
   width: 100%;   /* largura do carrossel */
+  height: 75vh;
   overflow: hidden;
   margin: 5px auto;
 }
@@ -43,7 +43,7 @@ main{
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
  
 }
 /* tratando os icones e texto*/
@@ -89,7 +89,7 @@ ul {
 
 .item {
   min-width: 100%; /* igual à largura do carrossel */
-  height: 600px;
+  height: 90%;
   background: white;
   /*border: 2px solid black;*/
   display: flex;
@@ -109,11 +109,32 @@ ul {
 /* Estilo padrão (desktop) */
 .imagem-apresentacao {
   width: 100%;
-  height: 80vh; /* altura para desktop */
+  height: 100vh; /* altura da área principal */
   background-image: url("imagem/imagem-apresentacao.png");
   background-size: cover;
   background-position: center;
+  border: 10px solid rgb(230, 123, 123);
+  position: relative; /* necessário para posicionar o h2 dentro */
+  overflow: hidden;
 }
+
+/* h2 ficará fixado na parte inferior da imagem */
+.scooter-escrita {
+  position: absolute;
+  bottom: 0;                /* encosta na parte de baixo */
+  left: 0;
+  width: 100%;
+  height: 15%;              /* ocupa 15% da altura da div */
+  background: rgba(0, 0, 0, 0.5); /* fundo semitransparente opcional */
+  color: white;             /* cor do texto */
+  display: flex;            /* centraliza texto */
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
 
 .imagem01{
   /* altura para desktop */
@@ -335,7 +356,7 @@ ul {
   width: 50%;
   height: 100%;
   object-fit: cover;       /* preenche sem distorcer */
-  
+
 }
 
 /* Linha opcional entre imagem e vídeo */
